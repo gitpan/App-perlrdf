@@ -1,0 +1,79 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 d2def87fadc3d1a0d0c758bbe575bc98461b6cda Changes
+SHA1 cc087c3dd6e1b519c680e68cd0231735a68300a0 LICENSE
+SHA1 ae3cf5091accc6cef06ea91c57175225d8a06410 MANIFEST
+SHA1 7ef45523720ac3ea2bb6c3c7ee11a958ce382507 META.yml
+SHA1 aa10c00d7d08978b8fee704d7824ba5d317d9e8f Makefile.PL
+SHA1 2e71a08d5fa72fdbd604eab591a1292ab7f76c1b README
+SHA1 a001add01ab487da8096acefe5259d1586c2f409 TODO
+SHA1 d718b7bae6895cd40bc514a91de615457df87b74 bin/perlrdf
+SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
+SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
+SHA1 4d793c044726e06fe35d8d129b76da2803377f92 inc/Module/Install/Scripts.pm
+SHA1 9de7b5129351499c048328dfa718d0eab557cf30 inc/Module/Install/TrustMetaYml.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
+SHA1 8d909d81d2f98514d42f67a972a489ff624a4183 inc/Module/Package/Dist/RDF.pm
+SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
+SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
+SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
+SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
+SHA1 8023dfc52d8344e15f19f673e658e0e43c402434 lib/App/perlrdf.pm
+SHA1 6b6767b459302e7de5092f7b57d52af84ae60323 lib/App/perlrdf/Command.pm
+SHA1 79de254133e68bc1a16bb52c2b55dc398deb35bc lib/App/perlrdf/Command/About.pm
+SHA1 9671a1af0dceef6f26978de673acc20824977adb lib/App/perlrdf/Command/Aliases.pm
+SHA1 2d0f83065a6641447369f16617563a3e8107db1c lib/App/perlrdf/Command/Canonicalize.pm
+SHA1 fee009bd72ec4e331e521dee4acbc7b0152b47d4 lib/App/perlrdf/Command/Commands.pm
+SHA1 0bdeaf26da07c389a3cb516555c3e80c01baf021 lib/App/perlrdf/Command/FileSpec.pm
+SHA1 22d713d7b48ee2da5180aa2baeed138a51884e06 lib/App/perlrdf/Command/Isomorphic.pm
+SHA1 0241d9c9e20984de3a03f0cf3c699e8378c08bb9 lib/App/perlrdf/Command/MakeStore.pm
+SHA1 7b3430a81111f5f6bd20c5b65229cb9422f421fa lib/App/perlrdf/Command/Prefix.pm
+SHA1 3c7a9ef32580ccfe0c3b4e0f85827ebad7da9d78 lib/App/perlrdf/Command/StoreDescribe.pm
+SHA1 c6398f5bbda0649f33d094c39415ae4e074ad5ef lib/App/perlrdf/Command/StoreDump.pm
+SHA1 e42ee0e857896987b23d9d72ec84be4647ddd82a lib/App/perlrdf/Command/StoreLoad.pm
+SHA1 97490a30f72bdb656c601ef33548ffcd6006905e lib/App/perlrdf/Command/StoreTruncate.pm
+SHA1 11e9723e6bab40df8e86d2c3a752ec5b411a0e82 lib/App/perlrdf/Command/Translate.pm
+SHA1 910cf5f6a3c1dc3f5814f0017aa9ee7db6fe5c0b lib/App/perlrdf/Command/Validate.pm
+SHA1 e496a94ad4da84254d2187d214947fe34ce14ceb lib/App/perlrdf/DummyModel.pm
+SHA1 56e77384769ac0cc63f239b182d7cac36b55428c lib/App/perlrdf/FileSpec.pm
+SHA1 f8b20148880621cb119ce8e44822964a97e98b84 lib/App/perlrdf/FileSpec/InputFile.pm
+SHA1 f973e9ed91a5ca59df55ac42e7ce4e31b23e89d4 lib/App/perlrdf/FileSpec/InputRDF.pm
+SHA1 421822c56c7f3f8e6595dff978cafc70bf317d0b lib/App/perlrdf/FileSpec/OutputFile.pm
+SHA1 3a1c804a816869d3d07735724eb570891bf8ccc4 lib/App/perlrdf/FileSpec/OutputRDF.pm
+SHA1 5cac85f576f17858cf450a30f04717e385c3abb8 meta/changes.pret
+SHA1 0176a7591b711c1eca2e511252e031eb4322864e meta/doap.pret
+SHA1 81ba61663e5b8e8445c3fdc38aecb6e9fdda9f2b meta/makefile.pret
+SHA1 a80384ed5585861df9f1bcbd1a812de36eb42a21 t/01basic.t
+SHA1 6241e55ff9b8eb12e239edfd8c6e8f09a905a878 t/02translate.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAlALmJoACgkQzr+BKGoqfTl+mwCgsbonJYbzA/uQZL0wnPn8vrmm
+pfYAoIrLgMZVvnkOSVOi1RrV+onVLNJE
+=yqCF
+-----END PGP SIGNATURE-----
