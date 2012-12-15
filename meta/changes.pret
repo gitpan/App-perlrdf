@@ -12,3 +12,9 @@
 		item "Add IO::Scalar dependency."^^Packaging;
 	].
 
+`App-perlrdf 0.003 cpan:TOBYINK`
+	issued  2012-12-15;
+	changeset [
+		item "Switch from Any::Moose to Moose."^^Update;
+	].
+

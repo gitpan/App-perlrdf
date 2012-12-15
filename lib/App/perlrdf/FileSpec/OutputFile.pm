@@ -8,10 +8,10 @@ use utf8;
 
 BEGIN {
 	$App::perlrdf::FileSpec::OutputFile::AUTHORITY = 'cpan:TOBYINK';
-	$App::perlrdf::FileSpec::OutputFile::VERSION   = '0.002';
+	$App::perlrdf::FileSpec::OutputFile::VERSION   = '0.003';
 }
 
-use Any::Moose;
+use Moose;
 use LWP::UserAgent;
 use Path::Class;
 use namespace::clean;
