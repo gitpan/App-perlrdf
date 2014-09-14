@@ -27,70 +27,70 @@ optional_features: {}
 provides:
   App::perlrdf:
     file: lib/App/perlrdf.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command:
     file: lib/App/perlrdf/Command.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::About:
     file: lib/App/perlrdf/Command/About.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Aliases:
     file: lib/App/perlrdf/Command/Aliases.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Canonicalize:
     file: lib/App/perlrdf/Command/Canonicalize.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Commands:
     file: lib/App/perlrdf/Command/Commands.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::FileSpec:
     file: lib/App/perlrdf/Command/FileSpec.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Isomorphic:
     file: lib/App/perlrdf/Command/Isomorphic.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::MakeStore:
     file: lib/App/perlrdf/Command/MakeStore.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Prefix:
     file: lib/App/perlrdf/Command/Prefix.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::StoreDescribe:
     file: lib/App/perlrdf/Command/StoreDescribe.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::StoreDump:
     file: lib/App/perlrdf/Command/StoreDump.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::StoreLoad:
     file: lib/App/perlrdf/Command/StoreLoad.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::StoreTruncate:
     file: lib/App/perlrdf/Command/StoreTruncate.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Translate:
     file: lib/App/perlrdf/Command/Translate.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::Command::Validate:
     file: lib/App/perlrdf/Command/Validate.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::DummyModel:
     file: lib/App/perlrdf/DummyModel.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::FileSpec:
     file: lib/App/perlrdf/FileSpec.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::FileSpec::InputFile:
     file: lib/App/perlrdf/FileSpec/InputFile.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::FileSpec::InputRDF:
     file: lib/App/perlrdf/FileSpec/InputRDF.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::FileSpec::OutputFile:
     file: lib/App/perlrdf/FileSpec/OutputFile.pm
-    version: '0.005'
+    version: '0.006'
   App::perlrdf::FileSpec::OutputRDF:
     file: lib/App/perlrdf/FileSpec/OutputRDF.pm
-    version: '0.005'
+    version: '0.006'
 recommends:
   App::perlrdf::Command::Query: '0'
   App::perlrdf::Command::Void: '0'
@@ -119,7 +119,8 @@ resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=App-perlrdf
   homepage: https://metacpan.org/release/App-perlrdf
   license: http://dev.perl.org/licenses/
-version: '0.005'
+  repository: git://github.com/tobyink/p5-app-perlrdf.git
+version: '0.006'
 x_provides_scripts:
   perlrdf:
     file: bin/perlrdf
