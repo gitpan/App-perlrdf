@@ -7,10 +7,11 @@ use utf8;
 
 BEGIN {
 	$App::perlrdf::Command::Aliases::AUTHORITY = 'cpan:TOBYINK';
-	$App::perlrdf::Command::Aliases::VERSION   = '0.004';
+	$App::perlrdf::Command::Aliases::VERSION   = '0.005';
 }
 
 use App::perlrdf -command;
+use match::simple qw(match);
 use namespace::clean;
 
 use constant {
@@ -45,22 +46,17 @@ sub opt_spec
 
 sub execute
 {
-	# XXX - ultimately this should move to match::simple, but
-	# I'll wait until that's packaged for Debian. (Hello, Jonas!)
-	# 
-	no if $] >= 5.017011, warnings => 'experimental::smartmatch';
-	
 	my ($self, $opt, $args) = @_;
 	
 	my $filter = scalar(@$args)
 		? $args
-		: sub { not(shift ~~ [qw(aliases commands help)]) };
+		: sub { not match($_[0], [qw(aliases commands help)]) };
 	
 	foreach my $cmd (sort $self->app->command_plugins)
 	{
 		my ($preferred, @aliases) = $cmd->command_names;
 		printf("%-16s: %s\n", $preferred, "@aliases")
-			if $preferred ~~ $filter;
+			if match($preferred, $filter);
 	}
 }
 

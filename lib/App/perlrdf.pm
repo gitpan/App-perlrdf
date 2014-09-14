@@ -7,17 +7,33 @@ use utf8;
 
 BEGIN {
 	$App::perlrdf::AUTHORITY = 'cpan:TOBYINK';
-	$App::perlrdf::VERSION   = '0.004';
+	$App::perlrdf::VERSION   = '0.005';
 }
 
 use App::Cmd::Setup -app => {
 	plugins => [qw( Prompt )],
 };
-use Object::AUTHORITY;
+
+sub AUTHORITY
+{
+	my $class = ref($_[0]) || $_[0];
+	no strict qw(refs);
+	${"$class\::AUTHORITY"};
+}
 
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=begin trustme
+
+=item AUTHORITY
+
+=end trustme
 
 =head1 NAME
 
@@ -42,7 +58,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

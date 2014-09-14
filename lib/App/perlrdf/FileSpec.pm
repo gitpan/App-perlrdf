@@ -8,13 +8,12 @@ use utf8;
 
 BEGIN {
 	$App::perlrdf::FileSpec::AUTHORITY = 'cpan:TOBYINK';
-	$App::perlrdf::FileSpec::VERSION   = '0.004';
+	$App::perlrdf::FileSpec::VERSION   = '0.005';
 }
 
 use Moose;
 use Moose::Util::TypeConstraints;
 use JSON;
-use Object::AUTHORITY;
 use PerlX::Maybe;
 use RDF::Trine;
 use URI;
@@ -117,6 +116,13 @@ sub TO_JSON
 	return $stringify
 		? to_json($r => +{ pretty => 1, canonical => 1 })
 		: $r;
+}
+
+sub AUTHORITY
+{
+	my $class = ref($_[0]) || $_[0];
+	no strict qw(refs);
+	${"$class\::AUTHORITY"};
 }
 
 1;
